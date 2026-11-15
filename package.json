@@ -1,0 +1,13 @@
+{
+  "name": "cover-page-for-wub-students",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Mobile-friendly WUB cover studio with optional Assignment No and browser-only PDF assembly. Firebase Hosting ready.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/serve.mjs",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "engines": { "node": ">=20" }
+}

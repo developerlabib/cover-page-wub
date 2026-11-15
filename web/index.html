@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#163b66">
+  <meta name="description" content="Create your WUB assignment in three easy steps. Choose a cover, add details and an optional Assignment No, then download a print-ready A4 PDF.">
+  <title>Cover Page for WUB Students</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+<svg class="icon-defs" aria-hidden="true"><defs>
+  <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></symbol>
+  <symbol id="i-edit" viewBox="0 0 24 24"><path d="m16 3 5 5-12 12-6 1 1-6Z M14 5l5 5"/></symbol>
+  <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 3 10 6-10 6L2 9Z M2 13l10 6 10-6M2 17l10 6 10-6"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 16v4a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-4"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 16V4m-5 5 5-5 5 5M4 16v4h16v-4"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-10v1"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3m-4 5v2"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+  <symbol id="i-rotate" viewBox="0 0 24 24"><path d="M3 10a9 9 0 1 1 2 8M3 4v6h6"/></symbol>
+  <symbol id="i-trash" viewBox="0 0 24 24"><path d="M3 6h18M9 6V3h6v3M5 6l1 15h12l1-15M10 10v7m4-7v7"/></symbol>
+  <symbol id="i-up" viewBox="0 0 24 24"><path d="m6 14 6-6 6 6"/></symbol>
+  <symbol id="i-down" viewBox="0 0 24 24"><path d="m6 10 6 6 6-6"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 3 2.5 6.5L21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5ZM20 2v4m-2-2h4"/></symbol>
+  <symbol id="i-external" viewBox="0 0 24 24"><path d="M14 3h7v7m0-7L10 14M10 3H4v17h17v-6"/></symbol>
+  <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M6 18a5 5 0 1 1 1-10 6 6 0 0 1 11 2 4 4 0 0 1 0 8Z"/></symbol>
+</defs></svg>
+<a class="skip-link" href="#builder">Skip to cover builder</a>
+<div class="app-shell">
+  <aside class="sidebar">
+    <a class="brand" href="./" aria-label="Cover Page for WUB Students home"><span class="brand-mark"><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg></span><span><strong>Cover Studio<span class="brand-dot">.</span></strong><small>FOR WUB STUDENTS</small></span></a>
+    <div class="sidebar-body">
+      <p class="nav-caption">YOUR WORKSPACE</p>
+      <nav class="side-nav" aria-label="Workspace">
+        <button class="side-link active" data-go="0"><svg class="icon" aria-hidden="true"><use href="#i-grid"/></svg>Cover builder<span class="nav-indicator"></span></button>
+        <button class="side-link" data-go="2"><svg class="icon" aria-hidden="true"><use href="#i-layers"/></svg>My assignment<span id="nav-count" class="count-pill">0</span></button>
+      </nav>
+      <div class="sidebar-note"><span class="tiny-caps">ONE LESS THING TO DO</span><h3>A great start<br>to your submission.</h3><p>Your cover, photos and PDFs.<br>One organized assignment.</p><div class="note-art" aria-hidden="true"><svg class="icon"><use href="#i-file"/></svg><span><svg class="icon"><use href="#i-check"/></svg></span></div></div>
+      <div class="sidebar-bottom">
+        <button class="help-link" id="help-button"><svg class="icon" aria-hidden="true"><use href="#i-info"/></svg>How it works<svg class="icon small" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+        <div class="developer"><div class="avatar" id="developer-avatar">LH</div><div><small>DESIGNED &amp; DEVELOPED BY</small><strong id="developer-name">MD. Labib Hasan</strong><div id="developer-links" class="developer-links"></div></div></div>
+      </div>
+    </div>
+    <button class="mobile-help icon-button" id="mobile-help" aria-label="How it works"><svg class="icon" aria-hidden="true"><use href="#i-info"/></svg></button>
+  </aside>
+  <main id="builder">
+    <header class="topbar"><div class="breadcrumb">Your workspace <span>/</span> <strong>Assignment studio</strong></div><span class="save-status" id="save-status" role="status"><span></span>Saved on this device</span></header>
+    <div class="main-content">
+      <section class="intro"><div><p class="eyebrow"><span></span>FROM FIRST PAGE TO FINAL PDF</p><h1>Your assignment.<br class="mobile-break"> <em>Ready to submit.</em></h1><p class="intro-copy">Choose a design, fill in your details, and download.<br class="desktop-break"> Add your assignment pages whenever you need them.</p></div><div class="intro-badge"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span><strong>Print-ready A4</strong><small>PDF &amp; PNG downloads</small></span></div></section>
+      <div class="steps" role="tablist" aria-label="Assignment builder steps">
+        <button class="step active" role="tab" aria-selected="true" id="step-0" aria-controls="panel-0" data-step="0"><span class="step-number">1</span><span><strong>Choose design</strong><small>9 original templates</small></span><svg class="icon" aria-hidden="true"><use href="#i-grid"/></svg></button>
+        <button class="step" role="tab" aria-selected="false" id="step-1" aria-controls="panel-1" data-step="1"><span class="step-number">2</span><span><strong>Add details</strong><small>Make it your own</small></span><svg class="icon" aria-hidden="true"><use href="#i-edit"/></svg></button>
+        <button class="step" role="tab" aria-selected="false" id="step-2" aria-controls="panel-2" data-step="2"><span class="step-number">3</span><span><strong>Export PDF</strong><small>Cover + your pages</small></span><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg></button>
+      </div>
+      <div class="workspace">
+        <div class="editor-column">
+          <section class="editor-panel" id="panel-0" role="tabpanel" aria-labelledby="step-0">
+            <div class="panel-heading"><div><p class="section-kicker">STEP 1 OF 3</p><h2>Start with a cover</h2><p>Tap a design to see it in your preview.</p></div><span class="subtle-pill">9 designs</span></div>
+            <div class="template-grid" id="template-grid"></div>
+            <div class="selection-summary"><span class="selection-check"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span><span><small>YOUR SELECTED DESIGN</small><strong id="chosen-template">Blue Horizon</strong></span></div>
+            <button class="button primary full" data-go="1">Continue to details<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+            <p class="panel-footnote">You can change the design at any time.</p>
+          </section>
+          <section class="editor-panel" id="panel-1" role="tabpanel" aria-labelledby="step-1" hidden>
+            <div class="panel-heading"><div><p class="section-kicker">STEP 2 OF 3</p><h2>Add your details</h2><p>Your cover updates as you type.</p></div><button class="sample-button text-button" id="sample-button"><svg class="icon" aria-hidden="true"><use href="#i-spark"/></svg>Try a sample</button></div>
+            <div class="form-tip"><svg class="icon" aria-hidden="true"><use href="#i-info"/></svg><p>Enter your cover details in English. All fields can be left blank.</p></div>
+            <form id="details-form" autocomplete="on">
+              <div class="form-section"><h3><span>01</span>Assignment details</h3>
+                <label for="degree">Degree / heading</label><input id="degree" name="degree" maxlength="100" placeholder="B.Sc. in Civil Engineering">
+                <div class="assignment-option">
+                  <label class="toggle-row" for="show-assignment-no"><span><strong>Include Assignment No</strong><small id="assignment-no-status">Hidden from your cover</small></span><input type="checkbox" role="switch" id="show-assignment-no" name="showAssignmentNo" aria-controls="assignment-no-field" aria-describedby="assignment-no-help"><span class="switch-track" aria-hidden="true"></span></label>
+                  <p id="assignment-no-help">Switch on to add a number above Topic.</p>
+                  <div id="assignment-no-field" class="optional-field" hidden><label for="assignment-no">Assignment No</label><input id="assignment-no" name="assignmentNo" maxlength="40" placeholder="e.g. 01" inputmode="text" aria-describedby="assignment-number-note"><small id="assignment-number-note">Use a number such as 01, 02 or CE-01.</small></div>
+                </div>
+                <label for="topic">Assignment topic</label><textarea id="topic" name="topic" rows="2" maxlength="180" placeholder="What is your assignment about?"></textarea>
+                <label for="course-title">Course title</label><input id="course-title" name="courseTitle" maxlength="120" placeholder="e.g. Building Materials">
+                <div class="field-row"><div><label for="course-code">Course code</label><input id="course-code" name="courseCode" maxlength="40" placeholder="e.g. CE 1203"></div><div><label for="submission-date">Submission date</label><input id="submission-date" name="submissionDate" type="date"></div></div>
+              </div>
+              <div class="form-section"><h3><span>02</span>Submitted by</h3>
+                <label for="student-name">Student name</label><input id="student-name" name="studentName" maxlength="100" autocomplete="name" placeholder="Your full name">
+                <label for="reg-id">Registration ID</label><input id="reg-id" name="regId" maxlength="70" placeholder="Your registration ID">
+                <label for="program">Program</label><input id="program" name="program" maxlength="120" placeholder="e.g. B.Sc. in Civil Engineering">
+                <div class="field-row"><div><label for="batch">Batch</label><input id="batch" name="batch" maxlength="30" placeholder="e.g. 65"></div><div><label for="roll-no">Roll number</label><input id="roll-no" name="rollNo" maxlength="40" placeholder="Your roll number"></div></div>
+              </div>
+              <div class="form-section"><h3><span>03</span>Submitted to</h3>
+                <label for="teacher-name">Teacher name</label><input id="teacher-name" name="teacherName" maxlength="100" placeholder="Your teacher's full name">
+                <label for="designation">Designation</label><input id="designation" name="designation" maxlength="100" placeholder="e.g. Assistant Professor">
+                <label for="department">Department</label><input id="department" name="department" maxlength="120" placeholder="e.g. Civil Engineering">
+              </div>
+            </form>
+            <div class="cloud-controls" id="cloud-controls" hidden><svg class="icon" aria-hidden="true"><use href="#i-cloud"/></svg><p>Cloud draft<small>Only form details are saved.</small></p><button class="text-button" id="cloud-save">Save</button><button class="text-button" id="cloud-load">Restore</button></div>
+            <div class="panel-actions"><button class="button secondary" data-go="0">Back</button><button class="button primary" data-go="2">Continue to export<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button></div>
+            <button class="text-button reset-button" id="reset-button">Clear saved details</button>
+          </section>
+          <section class="editor-panel" id="panel-2" role="tabpanel" aria-labelledby="step-2" hidden>
+            <div class="panel-heading"><div><p class="section-kicker">STEP 3 OF 3</p><h2>Ready for the final PDF?</h2><p>Download your cover, or add the rest of your work.</p></div></div>
+            <div class="cover-summary"><span class="summary-icon"><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg></span><div><strong>Assignment cover</strong><small id="cover-summary-name">Blue Horizon · Page 1</small></div><span class="included"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Included</span></div>
+            <label class="upload-zone" id="upload-zone" tabindex="0" role="button" aria-label="Add images or PDF assignment pages"><input id="file-input" type="file" accept="image/jpeg,image/png,image/webp,application/pdf" multiple hidden><span class="upload-icon"><svg class="icon" aria-hidden="true"><use href="#i-upload"/></svg></span><strong>Tap to add your pages</strong><span>Photos, scans or PDFs · <b>Browse files</b></span><small>Or drag files here · Up to 40 MB per file</small></label>
+            <div class="pages-toolbar"><h3>Assignment pages <span id="page-count">0</span></h3><span>Cover always comes first</span></div>
+            <div id="page-list" class="page-list"><div class="empty-pages">No extra pages yet. You can download just the cover.</div></div>
+            <div class="quality-field"><label for="quality">Download quality</label><select id="quality"><option value="original">Original — sharp PDF text</option><option value="balanced">Balanced — smaller scanned files</option><option value="compact">Compact — smallest image size</option></select><p id="quality-note">PDF text and artwork stay sharp. Images are optimized at high quality.</p></div>
+            <div class="private-note"><svg class="icon" aria-hidden="true"><use href="#i-lock"/></svg><p>Files are processed on your device. Select them again after a reload.</p></div>
+            <div class="panel-actions stack-actions"><button class="button secondary" id="preview-assignment"><svg class="icon" aria-hidden="true"><use href="#i-eye"/></svg>Preview all pages</button><button class="button primary" id="download-assignment"><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>Download PDF</button></div>
+            <p class="output-hint" id="output-hint">1 A4 page · Cover included</p>
+            <button class="text-button back-details" data-go="1">Back to details</button>
+          </section>
+        </div>
+        <button class="preview-backdrop" id="preview-backdrop" aria-label="Close document preview" tabindex="-1" hidden></button>
+        <section class="preview-column" id="preview-section" aria-label="Document preview">
+          <div class="preview-top"><h2><svg class="icon" aria-hidden="true"><use href="#i-eye"/></svg>Live preview</h2><span class="live-badge"><span></span>UP TO DATE</span><button class="icon-button close-preview" id="close-preview" aria-label="Close preview"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button></div>
+          <div class="preview-stage" id="preview-stage"><div class="paper" id="paper"><img id="preview-placeholder" src="./assets/templates/1.jpg" alt="Original Blue Horizon cover template"><canvas id="preview-canvas" aria-label="Your assignment cover preview"></canvas></div><div class="preview-message" id="preview-message" role="alert" hidden></div></div>
+          <div class="preview-controls"><span class="page-size">A4 <span>210 × 297 mm</span></span><div class="page-pagination"><button id="prev-page" class="icon-button" aria-label="Previous preview page" disabled><svg class="icon rotate-left" aria-hidden="true"><use href="#i-arrow"/></svg></button><span id="preview-page-label">Page 1 of 1</span><button id="next-page" class="icon-button" aria-label="Next preview page" disabled><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button></div><button class="icon-button" id="expand-preview" aria-label="Expand preview"><svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></button></div>
+          <div class="download-card"><div><strong>Your cover, ready to go.</strong><span>Download a print-ready A4 PDF.</span></div><button id="download-cover" class="button primary"><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>Cover PDF</button></div>
+          <div class="preview-footer"><span><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>No watermark</span><button class="text-button" id="download-png">Save cover as PNG<svg class="icon small" aria-hidden="true"><use href="#i-arrow"/></svg></button></div>
+        </section>
+      </div>
+      <footer class="page-footer"><span>Made for the work you put in.</span><span>Cover Page for WUB Students<span class="footer-dot">·</span><span id="footer-developer">MD. Labib Hasan</span></span></footer>
+    </div>
+  </main>
+</div>
+<div class="mobile-dock"><button class="button secondary" id="mobile-preview"><svg class="icon" aria-hidden="true"><use href="#i-eye"/></svg>Preview</button><button class="button primary" id="mobile-next"><span id="mobile-next-label">Next: details</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button></div>
+<div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+<div class="busy-overlay" id="busy-overlay" role="status" aria-live="polite" hidden><div class="busy-card"><span class="spinner" aria-hidden="true"></span><strong id="busy-title">Preparing your document…</strong><span id="busy-detail">Keeping everything in the right order.</span></div></div>
+<dialog id="help-dialog" aria-labelledby="help-title"><button class="icon-button dialog-close" data-close="help-dialog" aria-label="Close help"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button><span class="dialog-eyebrow">YOUR QUICK START GUIDE</span><h2 id="help-title">Three steps.<br>One finished assignment.</h2><ol class="help-steps"><li><span>1</span><div><strong>Choose your cover</strong><p>Tap any of the nine original WUB designs. On a phone, tap Preview to see your cover.</p></div></li><li><span>2</span><div><strong>Fill in your details</strong><p>Use English for your topic, student and teacher details. Switch on Include Assignment No if needed, then type your number. Switch it off to hide the whole row.</p></div></li><li><span>3</span><div><strong>Preview and download</strong><p>Download a cover PDF or PNG. For a complete assignment, add images or PDFs, arrange and rotate your pages, then download one A4 PDF.</p></div></li></ol><div class="help-note"><svg class="icon" aria-hidden="true"><use href="#i-lock"/></svg>Draft details save on this device. Uploaded pages must be selected again after reloading.</div><button class="button primary full" data-close="help-dialog">Start creating<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button></dialog>
+<noscript><p class="noscript-note">Please enable JavaScript to create and download your assignment cover.</p></noscript>
+</body>
+</html>
